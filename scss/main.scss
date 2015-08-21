@@ -8,17 +8,25 @@ body {
   height: 100%;
 }
 
+body,
+.country__block,
+.h1,
+.h3 {
+  font-family: 'Roboto', "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body {
   background: #333;
   color: #fff;
   font-size: 16px;
   line-height: 1.4;
+  font-weight: 300;
 }
 
 .bg-img {
   width: 100%;
   height: 100%;
-  background: url(/img/bg.jpg) no-repeat center center;
+  background: url(../img/bg.jpg) no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -43,16 +51,9 @@ body {
   transition: all .4s ease-in-out;
 }
 
-body,
-.country__block,
-.h1,
-.h3 {
-  font-family: "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .h1 {
   font-size: 5em;
-  font-weight: normal;
+  font-weight: 100;
   margin: 0;
   text-align: right;
   word-wrap: break-word;
@@ -61,7 +62,7 @@ body,
 
 .h2 {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 500;
   margin: 10px 0 40px;
   padding: 10px 0 0;
   text-align: right;
@@ -69,7 +70,12 @@ body,
 
 .h3 {
   font-size: 8.5em;
+  font-weight: 300;
   margin-top: 0;
+}
+
+.temp__block {
+  font-weight: 300;
 }
 
 .forecast > div {
@@ -115,6 +121,7 @@ body,
   top: -30px;
   font-size: 12em;
   line-height: 1;
+  font-weight: 500;
   color: rgba(243, 243, 243, 0.4);
   z-index: -1;
 }
